@@ -74,7 +74,7 @@ if ($_SESSION['valid'] == true){
     return str_replace($text, $tag1.$text.$tag2, $str);
   }
   try {
-    $con = new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
+    $con = new PDO("mysql:dbname= ;host=localhost"," "," ");
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
