@@ -69,7 +69,7 @@ if ($_SESSION['valid'] == true){
 ?>
 <?php
   try {
-    $con = new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
+    $con = new PDO("mysql:dbname= ;host=localhost"," "," ");
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
