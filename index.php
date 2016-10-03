@@ -82,7 +82,7 @@ if ($_SESSION['valid'] == true){
     echo "<br>New user?<br> Click <a href = \"newacc.php\" title = \"New Account\">here</a> to make a new account.</div>";
 }
   try {
-    $con = new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
+    $con = new PDO("mysql:dbname= ;host=localhost"," "," ");
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
