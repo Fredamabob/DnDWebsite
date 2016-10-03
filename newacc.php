@@ -64,7 +64,7 @@ div.style1 {
 		    //error_reporting(E_ALL);
 		    //ini_set('display_errors', '1');
 		 	try {
-			$con = new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
+			$con = new PDO("mysql:dbname= ;host=localhost"," "," ");
 			} catch (PDOException $e) {
 				echo 'Connection failed: ' . $e->getMessage();
 			}
