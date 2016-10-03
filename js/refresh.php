@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 function connect() {
-    return new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-    //return new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
+    return new PDO("mysql:dbname= ;host=localhost"," "," ", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    //return new PDO("mysql:dbname= ;host=localhost"," "," ");
 }
 $pdo = connect();
 $search = $_POST['search'];
