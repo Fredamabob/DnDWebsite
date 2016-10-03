@@ -1,0 +1,20 @@
+html{
+  background: url("1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+}
+.name {padding:0; text-transform:uppercase; letter-spacing:1px;
+       color:#6D0000; font-size:1.6rem; font-weight:bold; text-align: center;}
+.name:first-letter {font-size:2.4rem;}
+div svg	{width:100%; height:5px; margin-left:auto; 
+    margin-right:auto;}

@@ -1,0 +1,19 @@
+html{
+  background: url("1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+li { cursor: pointer; }
+.input_container ul {
+	width: 200px;
+	position: absolute;
+        border-radius: 25px;
+	z-index: 9;
+	background: #f3f3f3;
+	list-style: none;
+        background-color: white;
+        padding: 0px 19px 0px 50px;
+        margin-top: 0px;
+}

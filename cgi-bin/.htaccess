@@ -1,0 +1,5 @@
+Options -Indexes +ExecCGI
+AddHandler cgi-script .cgi .pl
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

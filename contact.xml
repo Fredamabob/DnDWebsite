@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contactformat.xslt"?>
+<contact>
+	<box>
+		<type>Email</type>
+		<address><a href="mailto:casagra1@dnd.myweb.cs.uwindsor.ca">casagra1@dnd.myweb.cs.uwindsor.ca</a></address>
+	</box>
+	<box>
+		<type>Phone</type>
+		<address>519 999 999</address>
+	</box>
+	<box>
+		<type>Cell</type>
+		<address>226 333 333</address>
+	</box>
+</contact>
