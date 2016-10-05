@@ -63,16 +63,17 @@ div.style1 {
 		 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 		 	try {
-			$con = new PDO("mysql:dbname= ;host=localhost"," "," ");
+			$con = new PDO("mysql:dbname=casagra1_dnd;host=localhost","casagra1_user","password");
 			} catch (PDOException $e) {
 				echo 'Connection failed: ' . $e->getMessage();
 			}
-			$search = $_GET["search"];
+			$search = htmlspecialchars($_GET["search"]);
 			$type = $_GET["type"];
 			$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			if (!($q1 = $con->prepare("UPDATE `Users` SET `Saved`=CONCAT(`Saved`,'".$search.",".$type.";') WHERE `Username`='".$_SESSION['username']."'"))) {
+			if (!($q1 = $con->prepare("UPDATE `Users` SET `Saved`=CONCAT(`Saved`,:search) WHERE `Username`='".$_SESSION['username']."'"))) {
 					echo "Prepare failed: (" . $con->errno . ") " . $con->error;
 			}
+			$q1->bindValue(":search", $search.",".$type.";", PDO::PARAM_STR);
 			$q1->execute();
          ?>
       <div class="centre">
